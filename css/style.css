@@ -29,9 +29,6 @@
 .debug main > section {
     height: 280px;
 }
-.debug main > section:nth-child(2n) {
-    background-color: lightgray;
-}
 .debug .col-big {
     background-color: aqua;
     height: 200px;
@@ -81,6 +78,14 @@
 .row {
     display: flex;
 }
+h1, h2 {
+    line-height: 45px;
+    padding-bottom: 40px;
+}
+p {
+    line-height: 30px;
+    margin-bottom: 25px;
+}
 /*---------------
     BUTTONS
 ---------------*/
@@ -93,6 +98,10 @@ button {
 }
 .black-btn {
     background-color: #23272a;
+    color: white;
+}
+.blue-btn {
+    background-color: #7289da;
     color: white;
 }
 .big-btn {
@@ -109,13 +118,13 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 572px;
     width: 100%;
     padding: 10px 0;
 }
 .header-top {
     padding: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     align-items: center;
 }
 .logo, .login {
@@ -152,24 +161,34 @@ header {
     max-width: 50%;
     text-align: center;
 }
-.hero h1 {
-    padding-bottom: 40px;
-}
-.hero p {
-    line-height: 25px;
-    margin-bottom: 30px;
-}
 /*---------------
     MAIN
 ---------------*/
 main section {
-    padding: 40px 0;
+    padding: 75px 0;
+}
+main > section:nth-of-type(2n) {
+    background-color: #f5f5f5;
+}
+.wav-a { /*grazie stack overflow*/
+    filter: invert(100%) sepia(0%) saturate(1691%) hue-rotate(74deg) brightness(119%) contrast(92%);
+    display: block;
+}
+.inverted-wav{
+    rotate: 180deg;
 }
 .col-big {
     width: 60%;
 }
 .col-small {
     width: 40%;
+    padding-top: 35px;
+}
+main section:last-child{
+    text-align: center;
+}
+.big-hero {
+    width: 100%;
 }
 
 /*---------------
@@ -207,7 +226,7 @@ body {
 header {
     color: white;
 }
-.header-bot {
+.header-bot, main {
     font-size: 20px;
 }
 .big-btn {
