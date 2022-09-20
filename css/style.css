@@ -75,34 +75,54 @@
     COMMON
 ---------------*/
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: auto;
 }
 .row {
     display: flex;
 }
 /*---------------
+    BUTTONS
+---------------*/
+button {
+    border-radius: 100px;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    cursor: pointer;
+}
+/*---------------
     HEADER
 ---------------*/
 header {
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
+    height: 625px;
     padding: 10px 0;
+    color: white;
 }
 .header-top {
     padding: 5px;
     margin-bottom: 10px;
+    align-items: center;
 }
 .logo, .login {
-    width: 20%;    
+    width: 25%;    
+}
+.logo {
+    height: 40px;
+}
+.login {
+    padding-right: 100px;
 }
 .header-top ul {
-    width: 60%;
-}
-.header-top ul {
+    width: 50%;
     list-style: none;
     justify-content: center;
+    align-items: center;
 }
 .header-top li {
-    margin: 0 10px;
+    margin: 0 30px;
 }
 .header-top ul li a {
     text-decoration: none;
@@ -156,4 +176,11 @@ footer {
 }
 .footer-bot .row div {
     padding: 5px;
+}
+
+/*---------------
+    TYPOGRAPHY
+---------------*/
+body {
+    font-family: 'Roboto', sans-serif;
 }
