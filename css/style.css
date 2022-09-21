@@ -80,11 +80,10 @@
 }
 h1, h2 {
     line-height: 45px;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 p {
     line-height: 30px;
-    margin-bottom: 25px;
 }
 ul {    
     list-style: none;
@@ -163,6 +162,9 @@ header {
     max-width: 50%;
     text-align: center;
 }
+.hero button {
+    margin: 20px 10px;
+}
 /*---------------
     MAIN
 ---------------*/
@@ -184,6 +186,9 @@ main > section:nth-of-type(2n) {
 .col-big {
     width: 60%;
 }
+.col-big * {
+    width: 100%
+}
 .col-small {
     width: 40%;
     padding-top: 35px;
@@ -193,6 +198,16 @@ main section:last-child{
 }
 .big-hero {
     width: 100%;
+}
+h1.container {
+    margin-bottom: 40px;
+}
+.stars {
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
 }
 /*---------------
     FOOTER
@@ -213,7 +228,8 @@ footer {
     color: #7289da;
 }
 footer li, li h2 {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+
 }
 li > * {
     vertical-align: middle;
@@ -251,13 +267,17 @@ body {
 header, footer, .black-btn, .blue-btn {
     color: white;
 }
+h1, h2{
+    font-size: 45px;
+}
 main, .header-bot, .big-btn {
     font-size: 20px;
 }
 li h2{
     font-size: 30px;
+    font-weight: 700;
 }
-/* titoli liste footer */
-.col-small-footer li:first-child{
+.stars {
+    font-size: 28px;
     font-weight: 700;
 }
