@@ -101,11 +101,9 @@ button {
 }
 .black-btn {
     background-color: #23272a;
-    color: white;
 }
 .blue-btn {
     background-color: #7289da;
-    color: white;
 }
 .big-btn {
     padding: 12px 17px;
@@ -203,7 +201,6 @@ main section:last-child{
 footer {
     background-color: #23272a;
     padding-top: 60px;
-    color: white;
 }
 .col-big-footer {
     width: 35%;
@@ -215,10 +212,7 @@ footer {
 .footer-top ul li:first-child{
     color: #7289da;
 }
-footer li {
-    padding-bottom: 20px;
-}
-li h2 {
+footer li, li h2 {
     padding-bottom: 20px;
 }
 li > * {
@@ -254,18 +248,16 @@ li img {
 body {
     font-family: 'Roboto', sans-serif;
 }
-header {
+header, footer, .black-btn, .blue-btn {
     color: white;
 }
-.header-bot, main {
-    font-size: 20px;
-}
-.big-btn {
+main, .header-bot, .big-btn {
     font-size: 20px;
 }
 li h2{
     font-size: 30px;
 }
+/* titoli liste footer */
 .col-small-footer li:first-child{
     font-weight: 700;
 }
